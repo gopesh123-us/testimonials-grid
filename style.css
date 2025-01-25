@@ -7,7 +7,6 @@
 body {
   font-family: "Barlow Semi Condensed", serif;
   font-style: normal;
-  overflow: hidden;
 }
 .container {
   display: grid;
