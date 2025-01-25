@@ -16,7 +16,7 @@ body {
   grid-template-rows: 1fr 1fr;
   gap: 30px;
   padding: 45px 40px;
-  position: absolute;
+  position: relative;
 }
 img {
   border: none;
