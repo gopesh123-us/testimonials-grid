@@ -20,6 +20,7 @@ body {
 }
 img {
   border: none;
+  width: 35px;
   border-radius: 50%;
 }
 .author-info {
@@ -27,6 +28,7 @@ img {
   justify-content: start;
   align-items: center;
   gap: 18px;
+  margin-bottom: 20px;
 }
 .author-info-text {
   display: flex;
@@ -35,11 +37,25 @@ img {
 .author-name {
   font-weight: 600;
 }
+.quote {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.testimonial,
+.graduation-status {
+  opacity: 0.5;
+}
 .card {
   border: 1px solid black;
   border-radius: 10px;
   padding: 30px;
   color: #fff;
+  box-shadow: 0px 0px 10px 2px rgba(48, 10, 10, 0.251);
+  border: none;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
 }
 .card-1 {
   grid-column: 1/3;
