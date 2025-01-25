@@ -16,7 +16,7 @@ body {
   grid-template-rows: 1fr 1fr;
   gap: 30px;
   padding: 45px 40px;
-  position: relative;
+  position: absolute;
 }
 img {
   border: none;
@@ -36,11 +36,13 @@ img {
 }
 .author-name {
   font-weight: 600;
+  opacity: 0.8;
 }
 .quote {
   font-weight: 600;
   font-size: 1.2rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  opacity: 0.8;
 }
 .testimonial,
 .graduation-status {
@@ -91,11 +93,18 @@ img {
   background-color: #ffffff;
   color: hsl(217, 19%, 35%);
 }
-@media (max-width: 500px) {
+/* @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
+} */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, minmax(350px, 1fr));
+    grid-template-rows: 1fr;
+  }
   .card {
-    grid-column: 1;
+    grid-column: auto;
+    grid-row: auto;
   }
 }
